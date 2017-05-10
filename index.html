@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>The HTML Canvas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="drawingApp">
+            <h1>my Drawing App</h1>
+            <ul id="shapes">
+                <li id="shapeLine" title="Line"><span></span></li>
+                <li id="shapeRectangle" title="Rectangle"><span></span></li>
+                <li id="shapeCircle" title="Circle"><span></span></li>
+                <li id="shapeImage" title="Image"><span></span></li>
+                <li id="shapeText" title="Text"><span></span></li>
+                <li id="shapeErase" title="Text"><span></span></li>
+                <li id="shapeClear"><input type="button" value="Clear Canvas" id="clearCanvas" /></li>
+				<li id ="shapeAnimation"><input type="button" value="Animate Canvas" id="animateCanvas" />
+				<br/>
+				<input type="button" value="Stop Animation" id="stopAnimation" /></li>
+            </ul>
+            <ul id="formatShapes">
+                <li>Line Width: <input type="text" id="lineWidth" value="1" /></li>
+                <li>Line Colour: <input type="color" id="lineColour" value="#000000" /></li>
+                <li>Fill Shape: <input type="checkbox" id="fillShape" /> <input type="color" id="fillColour" value="#000000" disabled /></li>
+                <li id="fontStyles">Font: <input type="text" id="fontName" value="Arial" /> Font size: <input type="text" id="fontSize" value="30px" /> Text: <input type="text" id="canvasText" value="Hello World" /></li>
+            </ul>
+            <canvas id="myCanvas" width="600" height="700"></canvas>
+        </div>
+    </div>
+</body>
+</html>
+<!--
+    Adapted from:
+
+    http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/
+
+    http://codecanyon.net/item/html5-face-builder/6476018?ref=designtitles&ref=designtitles&clickthrough_id=389289283&redirect_back=true
+
+    Images:
+    http://www.supercoloring.com/
+
+    http://www.supercoloring.com/
+-->

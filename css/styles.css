@@ -1,0 +1,132 @@
+﻿html, body {
+    width: 100%;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 960px;
+}
+
+#drawingApp {
+    padding: 0px 20px;
+}
+
+#myCanvas {
+    /* Set canvas border here */
+	border: dotted 1px #000;
+}
+
+#shapes, #formatShapes{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#shapes > li, #formatShapes > li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#shapeClear {
+    margin-left: 20px;
+}
+
+#shapeClear > input {
+    font-weight: bold;
+}
+
+#shapes span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #77C4D3;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 1px #808080;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#shapes span.active {
+    background: #FFD34E;
+}
+
+#shapeLine > span::after {
+    content: "";
+    box-shadow: 0 0 0 2px #000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#shapeRectangle > span::after {
+    content: "";
+    border: 3px solid #000;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 70%;
+    height: 70%;
+}
+
+#shapeCircle > span::after {
+    content: "";
+    border-radius: 18px;
+    border: 3px solid #000;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 70%;
+    height: 70%;
+}
+
+#shapeImage > span {
+    background: url(../images/picturebox.gif) no-repeat #77C4D3;
+    background-position: center;
+}
+
+#shapeImage > span.active {
+    background: url(../images/picturebox.gif) no-repeat #FFD34E;
+    background-position: center;
+}
+
+#shapeErase > span {
+    background: url(../images/draw-eraser-icon.png) no-repeat #77C4D3;
+    background-position: center;
+}
+
+#shapeErase > span.active {
+    background: url(../images/draw-eraser-icon.png) no-repeat #FFD34E;
+    background-position: center;
+}
+
+#shapeText > span {
+    background: url(../images/text-icon.png) no-repeat #77C4D3;
+    background-position: center;
+}
+
+#shapeText > span.active {
+    background: url(../images/text-icon.png) no-repeat #FFD34E;
+    background-position: center;
+}
+
+#formatShapes {
+    padding: 10px 0;
+}
+
+#lineWidth, #fontSize {
+    width: 60px;
+}
+
+#fontName {
+    width: 110px;
+}
+
+#formatShapes > li#fontStyles {
+    display: none;
+}
